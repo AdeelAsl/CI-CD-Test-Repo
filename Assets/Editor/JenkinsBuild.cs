@@ -20,7 +20,7 @@ public class JenkinsBuild
     public static void BuildMacOS()
     {
         var args = FindArgs();
-
+        var abc="Dumb Var";
         string fullPathAndName = args.targetDir + args.appName + ".app";
         BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Standalone, BuildTarget.StandaloneOSX, BuildOptions.None);
     }
